@@ -17,6 +17,9 @@ const ItemsList: React.FC<Props> = ({
         const product = PRODUCTS_MAP[item.productId];
         const price = product?.price || 0;
 
+        // eslint-disable-next-line no-console
+        console.log(PRODUCTS_MAP);
+
         return (
           <div key={item.productId}>
             <div>
